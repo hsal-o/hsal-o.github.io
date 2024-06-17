@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('/resources/images/experience-banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foreground {
+    position: relative;
+    width: 75vw;
+    min-height: 100vh;
+    background: #1d2134;
+    /* background: rgb(0, 0, 0, 0.3); */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------- */
+/* Main body */
+/* -------------------------------------------------- */
+main {
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    z-index: 1;
+    padding: 3% 5%; /* Add some padding to prevent overflow */
+    box-sizing: border-box;
+}
+
+main h2 {
+    margin: 0 0 24px 0;
+}
+
+/* -------------------------------------------------- */
+/* Timeline */
+/* -------------------------------------------------- */
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    /* min-height: 100vh; */
+}
+
+.timeline .timeline-row {
+    display: flex;
+    column-gap: 64px;
+}
+
+.timeline-column .timeline-box {
+    border-left: 5px solid #fff;
+}
+
+.timeline-box .timeline-event {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.timeline-event .container{
+    position: relative;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.timeline-event .content {
+    padding: 24px;
+    background-color: #141724;
+}
+
+.timeline-event .image {
+    width: 125px;
+    height: auto;
+    object-fit: cover;
+}
+
+.timeline-event .icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -33px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-event .icon img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+
+.timeline-event .content .timeline-logo {
+    position: absolute;
+    top: 8px; 
+    left: -23px; /* Adjust as needed */
+    max-width: 45px;
+    max-height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.timeline-event .content .year {
+    font-size: 16px;
+    color: #95cce3;
+}
+
+.timeline-event .content .year i {
+    margin-right: 8px;
+}
+
+.timeline-event .content h3 {
+    font-size: 24px;
+}
+
+.timeline-event .content h4 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.timeline-event .content p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.timeline-event .content .content-header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.spaced-pipe {
+    padding: 0 12px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+
+}
+
+.skills-container span {
+    background: #1D2134;
+    /* background: rgb(255, 255, 255, 0.1); */
+    padding: 4px 8px;
+
+}
