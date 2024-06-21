@@ -49,7 +49,7 @@ main {
     flex-direction: column;
     align-items: start;
     z-index: 1;
-    padding: 3% 5%; /* Add some padding to prevent overflow */
+    padding: 3% 5%; 
     box-sizing: border-box;
 }
 
@@ -57,3 +57,63 @@ main h2 {
     margin: 0 0 24px 0;
 }
 
+/* -------------------------------------------------- */
+/* Repos */
+/* -------------------------------------------------- */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.repos-box {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 16px;
+    border-radius: 8px;
+    /* background: #141724; */
+}
+
+
+.repo {
+    position: relative;
+    height: 150px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #141724;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.repo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/resources/images/logos/github-logo.png'); 
+    background-repeat: no-repeat; 
+    background-size: auto 100%;
+    background-position: right center;
+    opacity: 0.25; 
+    z-index: 1;
+}
+
+.repo:hover {
+    background-color: #262b44; 
+}
+
+.repo h2 {
+    margin: 0;
+    position: relative;
+    z-index: 2; 
+}
+
+.repo p {
+    position: relative;
+    z-index: 2; 
+}
