@@ -177,12 +177,10 @@ main h2 {
     justify-content: flex-start;
     align-content: flex-start;
     gap: 10px;
-
 }
 
 .skills-container span {
     background: #1D2134;
-    /* background: rgb(255, 255, 255, 0.1); */
+    border-radius: 4px;
     padding: 4px 8px;
-
 }
