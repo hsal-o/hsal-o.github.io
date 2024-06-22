@@ -11,17 +11,32 @@
     <link rel="stylesheet" href="/resources/css/header.css">
     <link rel="stylesheet" href="/resources/css/about.css">
     <script src="/components/header.js" defer></script>
+    <script src="/resources/js/about.js" defer></script>
   </head>
+
   <body>
     <div class="background">
       <header-component></header-component>
 
       <div class="foreground">
 
+        <div class="sub-header">
+          <div class="nav-toggle">
+            <a id="professional-tab" class="toggle-tab" href="#">PROFESSIONAL</a>
+            <a id="personal-tab" class="toggle-tab" href="#">PERSONAL</a>
+          </div>
+        </div>
+        
         <main>
+          <div id="professional-content">
+            <h2>Professional</h2>
+            <p>(WORK IN PROGRESS)</p>
+          </div>
 
-          <h2>About</h2>
-
+          <div id="personal-content" style="display:none;">
+            <h2>Personal</h2>
+            <p>(WORK IN PROGRESS)</p>
+          </div>
         </main>
 
       </div>
